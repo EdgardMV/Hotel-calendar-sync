@@ -23,7 +23,7 @@ jobs:
 
       - name: Create credentials file from secret
         run: |
-          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > service_account.json
+          echo '${{ secrets.GOOGLE_CREDENTIALS }}' > service_account.json
 
       - name: Run sync script
         run: python sync_script.py
